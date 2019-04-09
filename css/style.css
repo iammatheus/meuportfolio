@@ -47,7 +47,7 @@ body,html{
 .background-header{
   width: 100%;
   height: 100vh;
-  background-image: url('../images/bg-header5.jpg');
+  background-image: url('https://iammatheus.github.io/bg-header5.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -59,7 +59,7 @@ body,html{
   height: 50px;
   margin: 10px 0;
   padding: 0 2%;
-  background-image: url('../images/logotipo-png.png');
+  background-image: url('https://iammatheus.github.io/logotipo-png.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -146,7 +146,7 @@ body,html{
 .arrow-bottom{
   width: 40px;
   height: 40px;
-  background: url('../images/arrow-bottom3.png');
+  background: url('https://iammatheus.github.io/arrow-bottom3.png');
   background-size: 100% 100%;
   position: absolute;
   top: 92vh;
@@ -178,7 +178,7 @@ section.chamada-trabalho{
 .projetos-image{
   width: 73.2vw;
   height: 75vh;
-  background-image: url('../images/projeto.png');
+  background-image: url('https://iammatheus.github.io/projeto.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -210,7 +210,7 @@ section.contato{
 .bg-contato{
   width: 100%;
   height: 50vh;
-  background-image: url('../images/bg-contato.png');
+  background-image: url('https://iammatheus.github.io/bg-contato.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
