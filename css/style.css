@@ -1,0 +1,241 @@
+/*===========================================
+  CONFIGURAÇÕES GERAIS | CONTAINER | CLEAR
+============================================*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,html{
+  height: 100%;
+  font-family: 'roboto';
+}
+.clear{
+  clear: both;
+}
+.container{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+/*Animação Jquery*/
+.anime{/*Trabalhos*/
+  opacity:0;
+  transform: translate3d(-500px,0,0);
+  transition: .5s;
+}
+.anime2{/*Menu e Logo*/
+  opacity:0;
+  transform: translate3d(0,-100px,0);
+  transition: .6s;
+}
+.anime3{/*Título*/
+  opacity:0;
+  transition: 1s linear;
+}
+.anime-start{
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+/*==========================================*/
+
+/*===========================================
+  LOGO | BG-HEADER | MENU | CHAMADA
+============================================*/
+.background-header{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/bg-header5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ebebeb;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+  padding: 0 2%;
+  background-image: url('../images/logotipo-png.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 1s;
+}
+.logo:hover{
+  background-color: #e03b4f;
+  border-radius: 50px;
+}
+
+.background-header > .container{
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+.cabecalho nav.menu{
+  z-index: 5;
+  padding: 0 2%;
+  float: right;
+  width: 100%;
+}
+.cabecalho nav.menu-fixo{
+  position: fixed;
+  background-color: rgba(0, 0, 0, .3);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+}
+.cabecalho nav.menu-fixo:hover{
+  position: fixed;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.cabecalho nav ul{
+  float: right;
+  margin: -45px 0;
+}
+.cabecalho nav ul li{
+  list-style: none;
+  float: left;
+  padding: 0 15px;
+}
+.cabecalho nav ul li a{
+  text-decoration: none;
+  color: #ebebeb;
+  font-weight: bold;
+  font-size: 18px;
+}
+.cabecalho h1{
+  padding: 0 2%;
+  width: 100%;
+  text-align: center;
+  font-size: 75px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: inline-block;
+}
+.btn-chamada{
+  padding: 0 2%;
+  width: 280px;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  background: #e03b4f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-105%,250%);
+  cursor: pointer;
+  transition: .2s;
+}
+.btn-contrate{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(5%,250%);
+}
+.btn-chamada:hover{
+  background: #cf2a3e;
+}
+.arrow-bottom{
+  width: 40px;
+  height: 40px;
+  background: url('../images/arrow-bottom3.png');
+  background-size: 100% 100%;
+  position: absolute;
+  top: 92vh;
+  left: 50%;
+  margin-left: -20px;
+}
+
+/*=====================================================*/
+
+/*===========================================
+  PROJETOS | TRABALHOS
+============================================*/
+section.chamada-trabalho{
+  width: 100%;
+  padding: 75px 0;
+  background-color: #e6e6e6;
+}
+.projetos-image-wraper{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-5%);
+  width: 73.2vw;
+}
+.projetos-image-wraper h2{
+  color: #afafaf;
+  padding: 5px 0;
+}
+.projetos-image{
+  width: 73.2vw;
+  height: 75vh;
+  background-image: url('../images/projeto.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .6;
+  transition: .4s;
+  cursor: pointer;
+}
+.projetos-image:hover{
+  opacity:1;
+}
+.projetos-image-background{
+  background-color: #000;
+  box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+}
+.projetos-image-background > .btn-chamada{
+  position: absolute;
+  left: 100%;
+  top: 94.5%;
+  transform: translate(-115%,0%);
+}
+
+/*===========================================
+  CONTATO
+============================================*/
+section.contato{
+  width: 100%;
+  position: relative;
+}
+.bg-contato{
+  width: 100%;
+  height: 50vh;
+  background-image: url('../images/bg-contato.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cabecalho-contato{
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  color: #ebebeb;
+}
+.cabecalho-contato h2{
+  font-size: 28px;
+}
+.bg-contato > .container > .btn-chamada{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,20%);
+  cursor: pointer;
+  font-size: 15px;
+  line-height: normal;
+}
+.bg-contato > .container > .btn-chamada p{
+  margin: 50px 0;
+  font-size: 20px;
+}
