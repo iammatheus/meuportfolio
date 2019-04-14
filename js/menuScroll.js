@@ -14,9 +14,9 @@ $(function(){
     $('.sessao').each(function(){
       var elOffY = $(this).offset().top;
       if(elOffY+200 < (windowOffY + windowHeight) && elOffY+200+$(this).height() > windowOffY){
-        $('a').css('border-bottom','0');
+        $('a').css('color','#fff');
         var target = $(this).attr('target');
-        $('.'+target).css('border-bottom','1px solid #f13f55');
+        $('.'+target).css('color','#f13f55');
         return;
       }
     });
