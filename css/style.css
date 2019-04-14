@@ -47,7 +47,7 @@ body,html{
 .background-header{
   width: 100%;
   height: 100vh;
-  background-image: url('https://iammatheus.github.io/bg-header5.jpg');
+  background-image: url('../images/bg-header5.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,12 +58,12 @@ body,html{
   width: 50px;
   height: 50px;
   margin: 10px 0;
-  background-image: url('https://iammatheus.github.io/logotipo-png.png');
+  background-image: url('../images/logotipo-png.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  transition: 1s;
+  transition: .5s;
 }
 .logo:hover{
   background-color: #e03b4f;
@@ -145,7 +145,7 @@ body,html{
 .arrow-bottom{
   width: 40px;
   height: 40px;
-  background: url('https://iammatheus.github.io/arrow-bottom3.png');
+  background: url('../images/arrow-bottom3.png');
   background-size: 100% 100%;
   position: absolute;
   top: 92vh;
@@ -177,7 +177,7 @@ section.chamada-trabalho{
 .projetos-image{
   width: 73.2vw;
   height: 75vh;
-  background-image: url('https://iammatheus.github.io/projeto.png');
+  background-image: url('../images/projeto.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -205,11 +205,12 @@ section.chamada-trabalho{
 section.contato{
   width: 100%;
   position: relative;
+
 }
 .bg-contato{
   width: 100%;
   height: 50vh;
-  background-image: url('https://iammatheus.github.io/bg-contato.png');
+  background-image: url('../images/bg-contato.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -237,4 +238,120 @@ section.contato{
 .bg-contato > .container > .btn-chamada p{
   margin: 50px 0;
   font-size: 20px;
+}
+
+
+/*===========================================
+ -  formulario | redes-sociais | form-wraper
+============================================*/
+.formulario{
+  background-color: #000;
+  display: none;
+  width: 100%;
+  height: 50vh;
+  background-image: url('../images/bg-formulario2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f7f7f7;
+  padding: 0 2%;
+}
+.cabecalho-formulario h2{
+  display: inline-block;
+  margin: 17vh 0;
+  float: right;
+  text-align: center;
+  line-height: 35px;
+  font-size: 35px;
+}
+.redes-sociais{
+  padding: 20vh 0;
+}
+.redes-sociais a{
+  text-decoration: none;
+  font-size: 35px;
+  height: 30px;
+  margin: 0 2%;
+  cursor: pointer;
+  transition: .3s;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  transition: .3s;
+}
+.redes-sociais a:nth-of-type(1):hover{/*facebook*/
+  color:#3b5998;
+  background:white;
+}
+.redes-sociais a:nth-of-type(2){/*github*/
+  line-height: 27px;
+  border-radius: 15px 15px 19px 19px;
+}
+.redes-sociais a:nth-of-type(2):hover{/*github*/
+  color: white;
+  background: #000;
+}
+.redes-sociais a:nth-of-type(3){/*instagram*/
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35.5px;
+}
+.redes-sociais a:nth-of-type(3):hover{/*instagram*/
+  color: white;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+.redes-sociais a:nth-of-type(4){/*whatsapp*/
+  border-radius: 15px;
+}
+.redes-sociais a:nth-of-type(4):hover{/*whatsapp*/
+  color: white;
+  background: #4fce5d;
+}
+
+/*===========================================
+ -  formulário
+============================================*/
+.form-wraper{
+  width: 100%;
+  max-width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-52%);
+  z-index: 1;
+}
+.form-wraper input[type=text],input[type=email],textarea{
+  width: 100%;
+  padding: 11px 2%;
+  display: block;
+  margin: 10px 0;
+  font-size: 15px;
+  outline:0;
+  border: 1px solid #777;
+}
+.form-wraper textarea{
+  padding: 7px 2% 100px 2%;
+  resize: none;
+}
+.form-wraper input[type=submit]{
+  padding: 0 2%;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  background: #e03b4f;
+  border:0;
+  border-bottom: 3px solid #da6170;
+  cursor: pointer;
+  transition: .2s;
+  font-weight: bold;
+}
+.form-wraper input[type=submit]:hover{
+  background: #cf2a3e;
+  border-bottom: 3px solid #ac4b57;
 }
