@@ -274,7 +274,7 @@ section.contato{
   margin: 0 2%;
   cursor: pointer;
   transition: .3s;
-  color: #fff;
+  color: #000;
   border-radius: 5px;
   text-align: center;
   line-height: 30px;
@@ -282,14 +282,14 @@ section.contato{
 }
 .redes-sociais a:nth-of-type(1):hover{/*facebook*/
   color:#3b5998;
-  background:white;
+  background:#fff;
 }
 .redes-sociais a:nth-of-type(2){/*github*/
   line-height: 27px;
   border-radius: 15px 15px 19px 19px;
 }
 .redes-sociais a:nth-of-type(2):hover{/*github*/
-  color: white;
+  color: #fff;
   background: #000;
 }
 .redes-sociais a:nth-of-type(3){/*instagram*/
@@ -299,7 +299,7 @@ section.contato{
   line-height: 35.5px;
 }
 .redes-sociais a:nth-of-type(3):hover{/*instagram*/
-  color: white;
+  color: #fff;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
 }
@@ -307,7 +307,7 @@ section.contato{
   border-radius: 15px;
 }
 .redes-sociais a:nth-of-type(4):hover{/*whatsapp*/
-  color: white;
+  color: #fff;
   background: #4fce5d;
 }
 
