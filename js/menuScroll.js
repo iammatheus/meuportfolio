@@ -13,7 +13,7 @@ $(function(){
     var windowHeight = $(window).height();
     $('.sessao').each(function(){
       var elOffY = $(this).offset().top;
-      if(elOffY+200 < (windowOffY + windowHeight) && elOffY+200+$(this).height() > windowOffY){
+      if(elOffY+330 < (windowOffY + windowHeight) && elOffY+330+$(this).height() > windowOffY){
         $('.menu ul li a').css('color','#fff');
         var target = $(this).attr('target');
         $('.'+target).css('color','#f13f55');

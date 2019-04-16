@@ -253,16 +253,26 @@ section.contato{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #f7f7f7;
   padding: 0 2%;
 }
 .cabecalho-formulario h2{
+  color: #f7f7f7;
   display: inline-block;
-  margin: 17vh 0;
-  float: right;
+  margin: 17vh 40px;
   text-align: center;
   line-height: 35px;
   font-size: 35px;
+  font-weight: normal;
+  float: right;
+}
+.cabecalho-formulario p{
+  display: inline-block;
+  color: #e1e1e1;
+  position: absolute;
+  top: 47%;
+  left: 74%;
+  text-align: center;
+  width: 17%;
 }
 .redes-sociais{
   padding: 20vh 0;
@@ -274,7 +284,7 @@ section.contato{
   margin: 0 2%;
   cursor: pointer;
   transition: .3s;
-  color: #000;
+  color: #fff;
   border-radius: 5px;
   text-align: center;
   line-height: 30px;
@@ -282,14 +292,14 @@ section.contato{
 }
 .redes-sociais a:nth-of-type(1):hover{/*facebook*/
   color:#3b5998;
-  background:#fff;
+  background:white;
 }
 .redes-sociais a:nth-of-type(2){/*github*/
   line-height: 27px;
   border-radius: 15px 15px 19px 19px;
 }
 .redes-sociais a:nth-of-type(2):hover{/*github*/
-  color: #fff;
+  color: white;
   background: #000;
 }
 .redes-sociais a:nth-of-type(3){/*instagram*/
@@ -299,15 +309,14 @@ section.contato{
   line-height: 35.5px;
 }
 .redes-sociais a:nth-of-type(3):hover{/*instagram*/
-  color: #fff;
+  color: white;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
 }
 .redes-sociais a:nth-of-type(4){/*whatsapp*/
   border-radius: 15px;
 }
 .redes-sociais a:nth-of-type(4):hover{/*whatsapp*/
-  color: #fff;
+  color: white;
   background: #4fce5d;
 }
 
