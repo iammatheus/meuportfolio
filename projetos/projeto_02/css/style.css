@@ -1,0 +1,271 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+html,body{
+	height: 100%;
+}
+
+/*DIVS GERAIS*/
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+header{
+	background-color:#b8cad6; /*ou essa: 8bb7c9*/
+	padding: 10px 2% 40px 2%;
+}
+
+.logo1{
+	float: left;
+	width: 160px;
+	height: 60px;
+	background-image: url('../images/sualogo.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-color: purple;*/
+}
+
+.logo2{
+	float: right;
+	width: 160px;
+	height: 60px;
+	background-image: url('../images/sualogo2.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-color: green;*/
+}
+
+section.cover-form{
+	width: 100%;
+}
+.bg{
+	position: relative;
+	height: 550px;
+	background-image: url('../images/bg-form.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.form-container{
+	position: absolute;
+	right: 30px;
+	top: -2.5%;
+	width: 400px;
+	height: 105%;
+	background-color: rgb(255,255,255,.5);
+	box-shadow: 3px 3px 2px 1px rgba(0,0,0,.2);
+	border-radius: 5px;
+}
+.form-container h2{
+	font-weight: normal;
+	padding: 25px 15px;
+	color: white;
+	text-shadow: 2px 1px 5px #000;
+	font-size: 18px;
+}
+.form-container form{
+	margin-top: 8px;
+	padding: 15px;
+}
+.form-container form p{
+	font-size: 15px;
+	color: white;
+	text-shadow: 2px 1px 3px #000;
+}
+.form-wraper:not(:first-child){
+	margin-top: 40px;
+}
+.form-wraper:last-child{
+	margin-top: 20px;
+}
+.form-container form input{
+	width: 100%;
+	border-radius: 3px;
+	 border:0;
+	height: 45px;
+	line-height: 45px;
+	padding-left: 10px;
+	outline: 0;
+	font-size: 16px;
+}
+.form-container form input[type=submit]{
+	background-color: #033C50;
+	text-transform: uppercase;
+	color: white;
+	width: 100%;
+	font-size: 25px;
+	height: 55px;
+	cursor: pointer;
+	border:0;
+	border-radius: 3px;
+}
+.form-container form input[type=submit]:hover{
+	background-color: #0c546d; /*OU esse: 005a7a*/
+}
+
+section.chamada{
+	width: 100%;
+	text-align: center;
+}
+section.chamada .container{
+	background-color: #d0dae0;
+	padding: 70px 0 50px 0;
+}
+section.chamada h2{
+	width: 96%;
+	max-width: 700px;
+	display: inline-block;
+	color: black;
+	font-size: 30px;
+	font-weight: normal;
+}
+section.chamada p{
+	width: 96%;
+	margin-top: 5px;
+	font-size: 17px;
+	display: inline-block;
+}
+
+.images-mosaico{
+	display: flex;
+}
+.img-mosaico{
+	background-position: center;
+	background-size: cover;
+	width: 60%;
+}
+.text-mosaico{
+	width: 40%;
+	padding: 100px 40px;
+	background-color: #e6b483;
+	color: #683504;
+}
+.text-mosaico b{
+	font-size: 12px;
+	word-wrap: break-word;
+	color: #873d05;
+
+}
+
+footer{
+	width: 100%;
+	background-color: #f1f1f1;
+	color: #001d3a;
+	font-size: 18px;
+	display: inline-block;
+}
+footer a{
+	text-decoration: none;
+	color: #001d3a;
+}
+footer a:hover{
+	color: #0b8cb7;
+}
+footer div.contato{
+	float: right;
+	width: 50%;
+	position: relative;
+	text-align: center;
+}
+footer div.info{
+	width: 50%;
+	position: relative;
+	top: 40px;
+	text-align: center;
+}
+
+footer img{
+	background-size: 100% 100%;
+	width: 170px;
+	text-align: center;
+	position: relative;
+	left: 45%;
+}
+
+
+@media screen and (max-width: 510px){
+	header{
+		text-align: center;
+	}
+
+	[class^="logo"]{/*Mesmo que: .logo1,.logo2 */
+		margin-top: 10px;
+		float: none;
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 960px){
+	.bg{
+		text-align: center;
+		padding: 40px 0;
+		height: auto;
+	}
+	.form-container{
+		position: static;
+		display: inline-block;
+		width: 96%;
+		height: auto;
+		margin-top: -0.4%;
+		max-width: 400px;
+	}
+	.form-container form p{
+		font-size: 17px;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	.images-mosaico{
+		display: block;
+	}
+
+	.img-mosaico{
+		padding-top: 63%;
+		width: 100%;
+	}
+
+	.text-mosaico{
+		width: 100%;
+		text-align: justify;
+	}
+}
+
+@media screen and (max-width: 1100px){
+	footer div.contato, footer div.info{
+		width: 100%;
+		text-align: center;
+		padding: 10px 0;
+		top: 0;
+	}
+	footer img{
+		width: 18%;
+		left: 42%;
+		text-align: center;
+		padding: 10px 0;
+	}
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #0c546d inset;
+}

@@ -1,0 +1,625 @@
+/*===================================
+  Reset Geral
+=====================================*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+}
+.center{
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 2%;
+  margin: 0 auto;
+}
+.clear{
+  clear: both;
+}
+/***/
+
+/*===================================
+  ANIMAÇÕES JQUERY
+=====================================*/
+  /*Cabeçalho - Navegação*/
+  .anime-logo{
+    opacity:0;
+    transform: translate3d(0,-60px,0);
+    transition: .5s;
+  }
+  .anime-li1,
+  .anime-li2,
+  .anime-li3,
+  .anime-li4{
+    opacity:0;
+    transform: translate3d(0,-60px,0);
+    transition: .5s;
+    transition-delay: .2s;
+  }
+  .anime-li2{
+    transition-delay: .4s;
+  }
+  .anime-li3{
+    transition-delay: .6s;
+  }
+  .anime-li4{
+    transition-delay: .8s;
+  }
+  /***/
+
+  /*Chamada - Grab a Coffee - Btn Grab*/
+  .anime-original{
+    opacity:0;
+    transform: translate3d(0,-200px,0);
+    transition: .5s;
+    transition-delay: .3s;
+  }
+  .anime-house{
+    opacity:0;
+    transform: translate3d(0,-200px,0);
+    transition: .5s;
+    transition-delay: .6s;
+  }
+  .anime-btngrab{
+    opacity:0;
+    transform: translate3d(-500px,0,0);
+    transition: .5s;
+    transition-delay: .9s;
+  }
+  /***/
+
+  /*Section Coffee - Slider-Coffee*/
+  .anime-h2{
+    opacity:0;
+    transform: translate3d(-500px,0,0);
+    transition: .5s;
+  }
+  .anime-slide-coffee1{
+    opacity:0;
+    transform: translate3d(0,100px,0);
+    transition: .5s;
+  }
+  .anime-slide-coffee2{
+    opacity:0;
+    transform: translate3d(0,-100px,0);
+    transition: .5s;
+  }
+  /***/
+
+  .anime-customers{
+    opacity:0;
+    transform: translate3d(0,0,0);
+    transition: 1.5s;
+  }
+
+  /*Inicia as animações*/
+  .anime-start{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+  /***/
+/***/
+
+/*===================================
+  ESTILO PARA O SLICK
+=====================================*/
+.slick-dotted ul{
+	list-style: none;
+	text-align: center;
+	position: relative;
+	top: 30px;
+	margin-bottom: 30px;
+}
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+.slick-dotted button:focus{
+	outline: 0;
+}
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border:0;
+	border-radius: 8px;
+	color: #ad977e;
+	background: #ad977e;
+	opacity: 1;
+	cursor: pointer;
+}
+li.slick-active button{
+	background: #c0580c;
+	color: #c0580c;
+}
+.slick-slide:focus{
+	outline: none;
+}
+/***/
+
+/*===================================
+  Cabeçalho - Navegação
+=====================================*/
+.cabecalho{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/bg-header.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+nav{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+}
+nav.desktop{
+  width: 100%;
+  height: 80px;
+}
+.logo{
+  width: 63px;
+  height: 63px;
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  top: 5px;
+}
+.logo > h2{
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.0rem;
+  position: relative;
+  left: 65px;
+  top: 9px;
+  color: #fff;
+}
+.desktop ul{
+  list-style: none;
+  float: right;
+  margin: -37px 0;
+}
+.desktop li{
+  float: left;
+  margin: 0 15px;
+}
+.desktop li a{
+  font-family: tahoma;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.desktop li:nth-child(1){
+  border-bottom: 1px solid #c0580c;
+}
+/***/
+
+/*MOBILE*/
+nav.mobile{
+  display: none;
+  text-align: right;
+  width: 100%;
+  margin-top: 20px;
+}
+.mobile i{
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+}
+.mobile ul{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  display: none;
+  list-style: none;
+  background: #868075;
+}
+.mobile-scale{
+  transform: scale(.98);
+}
+.mobile ul li{
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.mobile ul li:hover{
+  background-color: rgba(0, 0, 0,.2);
+}
+.mobile a{
+  font-family: 'roboto';
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  margin: 0 12px;
+}
+.menu-fixo{
+  position: fixed;
+  transform: scale3d(.98,1,1);
+}
+/*===================================
+  Chamada - Grab a Coffee - Btn Grab
+=====================================*/
+.chamada-coffee{
+  margin-top: 180px;
+}
+.chamada-coffee .center > h2{
+  font-family: 'Crimson Text', serif;
+  font-size: 4.2rem;
+  font-variant: small-caps;
+  color: #fff;
+  text-align: left;
+  margin-left: 70px;
+  font-weight: lighter;
+}
+.chamada-coffee .center > h1{
+  color: #c0580c;
+  font-family: 'Dancing Script', cursive;
+  font-size: 7.3rem;
+}
+.button-grab{
+  font-family: 'roboto';
+  width: 250px;
+  height: 50px;
+  line-height: 46px;
+  border: 2px solid rgba(232, 192, 162, 0.5);
+  border-radius: 50px;
+  color:#fff;
+  background: #c0580c;
+  font-size: 1.4rem;
+  text-align: center;
+  cursor: pointer;
+  margin: 20px 115px;
+}
+/***/
+
+/*===================================
+  Section Coffee - Slider-Coffee
+=====================================*/
+.slider-coffee{
+  padding: 60px 0 0 0;
+  position: relative;
+}
+.slider-coffee h2{
+  font-family: 'Mangal';
+  font-variant: small-caps;
+  font-size: 2.2rem;
+  display: inline-block;
+  background: #fff;
+  width: 310px;
+  position: absolute;
+  top: 27px;
+}
+.linha{
+  width: 100%;
+  height: 2px;
+  background: #c0580c;
+}
+.slide-wraper{
+  padding: 50px 0
+}
+.slide-coffee-single{
+  width: 33.33%;
+  float: left;
+  padding: 0 2%;
+}
+.foto-slider1,
+.foto-slider2,
+.foto-slider3{
+  width: 100%;
+  padding-top: 260px;
+  background-image: url('../images/blueberry-truffles.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+.foto-slider2{
+  background-image: url('../images/strawberry-smoothie.jpg');
+}
+.foto-slider3{
+  background-image: url('../images/coffee-choco-cake.jpg');
+}
+/***/
+
+/*===================================
+  Section Customers - Slider-customers
+=====================================*/
+.slider-customers{
+  width: 100%;
+  height: 400px;
+  background-image: url('../images/bg-section-costumers.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  font-family: 'Mangal';
+}
+.slider-customers .center > h2{
+  font-variant: small-caps;
+  font-size: 35px;
+  position: absolute;
+  top: 27px;
+  padding: 0 .5%;
+  background: #444;
+  border-radius: 15px;
+}
+.slider-customers .center >  .linha{
+  margin-top: 60px;
+}
+.slider-customers-single{
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+.slider-customers-single p{
+  display: inline-block;
+  max-width: 50%;
+  text-align: justify;
+}
+.cliente{
+  width: 100%;
+}
+.cliente > h2{
+  width: 75%;
+  text-align: right;
+}
+.cliente h2 > .linha-name{
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  margin:5px 10px;
+}
+/***/
+
+/*===================================
+  Section footer-logo
+=====================================*/
+.footer-logo{
+  padding: 15% 0;
+  background: #10120f;
+  width: 100%;
+  height: auto;
+  background-image: url('../images/logo-footer.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+/***/
+
+/*===================================
+  footer - SociaL Media
+=====================================*/
+footer{
+  background: #000;
+  width: 100%;
+  height: 135px;
+  text-align: center;
+}
+.social-medias{
+  display: inline-block;
+  margin-top:27px;
+}
+a.pinterest,
+.instagram,
+.facebook,
+.twitter{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/pinterest.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 50px;
+}
+.facebook{
+  background-image: url('../images/facebook.png');
+}
+.instagram{
+  background-image: url('../images/instagram.png');
+}
+.twitter{
+  background-image: url('../images/twitter.png');
+}
+footer p{
+  font-family: 'roboto';
+  font-size: 14px;
+  margin-top: 15px;
+  color: #ad977e;
+}
+
+/*===================================
+  MEDIA QUERIES - 768px - 580px - 360px
+=====================================*/
+
+/*768px*/
+@media screen and (max-width: 768px){
+  /*===================================
+    Cabeçalho - Navegação
+  =====================================*/
+  .desktop ul{
+    display: none;
+  }
+  nav.mobile{
+    display: inline-block;
+  }
+  /***/
+
+  /*===================================
+    Chamada - Grab a Coffee - Btn Grab
+  =====================================*/
+  .chamada-coffee{
+    width: 100%;
+    text-align: center;
+  }
+  .chamada-coffee .center > h2{
+    margin: 0;
+    display: inline-block;
+  }
+  .chamada-coffee .center > h1{
+
+  }
+  .button-grab{
+    margin: 20px 0;
+    display: inline-block;
+  }
+  /***/
+
+  /*===================================
+    Section Coffee - Slider Coffee
+  =====================================*/
+  .foto-slider1,
+  .foto-slider2,
+  .foto-slider3{
+    width: 100%;
+    padding-top: 200px;
+    border-radius: 10px;
+  }
+  /***/
+
+  /*===================================
+    Section Customers - Slider-customers
+  =====================================*/
+  .slider-customers{
+    height: 420px;
+  }
+  .slider-customers-single p{
+    max-width: 95%;
+  }
+  /***/
+
+  /*===================================
+    footer - SociaL Media
+  =====================================*/
+  a.pinterest,
+  .instagram,
+  .facebook,
+  .twitter{
+    width: 40px;
+    height: 40px;
+    margin: 0 15px;
+  }
+  /***/
+}
+/***/
+
+/*580px*/
+@media screen and (max-width: 580px){
+  /*===================================
+    Chamada - Grab a Coffee - Btn Grab
+  =====================================*/
+  .chamada-coffee .center > h2{
+    font-size: 3.0rem;
+  }
+  .chamada-coffee .center > h1{
+    font-size: 4.8rem;
+  }
+  /***/
+
+  /*===================================
+    Section Coffee - Slider-Coffee
+  =====================================*/
+  .slider-coffee h2{
+    font-size: 1.8rem;
+    width: 250px;
+    top: 31px;
+  }
+  .foto-slider1,
+  .foto-slider2,
+  .foto-slider3{
+    width: 100%;
+    padding-top:300px;
+    border-radius: 10px;
+  }
+  /***/
+
+  /*===================================
+    Section Customers - Slider-customers
+  =====================================*/
+  .slider-customers .center > h2{
+    top: 35px;
+    font-size: 1.8rem;
+  }
+  .cliente > h2{
+    width: 95%;
+    font-size: 1.3rem;
+  }
+  /***/
+}
+/***/
+
+/*360px*/
+@media screen and (max-width: 360px){
+  /*===================================
+    Chamada - Grab a Coffee - Btn Grab
+  =====================================*/
+  .chamada-coffee .center > h2{
+    font-size: 2.6rem;
+  }
+  .chamada-coffee .center > h1{
+    font-size: 4.2rem;
+    overflow: hidden;
+  }
+  /***/
+
+  /*===================================
+    Section Coffee - Slider-Coffee
+  =====================================*/
+  .slider-coffee h2{
+    overflow: hidden;
+    font-size: 1.5rem;
+    width: 210px;
+    top: 37px;
+  }
+  .foto-slider1,
+  .foto-slider2,
+  .foto-slider3{
+    width: 100%;
+    padding-top: 200px;
+    border-radius: 10px;
+  }
+  /***/
+
+  /*===================================
+    Section Customers - Slider-customers
+  =====================================*/
+  .slider-customers{
+    height: 450px;
+  }
+  .slider-customers .center > h2{
+    font-size: 1.5rem;
+  }
+  .slider-customers-single{
+    margin-top: 90px;
+  }
+  /***/
+  /*===================================
+    footer - SociaL Media
+  =====================================*/
+  a.pinterest,
+  .instagram,
+  .facebook,
+  .twitter{
+    width: 30px;
+    height: 30px;
+    margin: 0 15px;
+  }
+  /***/
+}
+/***/
+
+/*Background-header*/
+@media (max-height: 568px) and (max-width: 1400px){
+  .cabecalho{
+    width: 100%;
+    height: 570px;
+  }
+}
