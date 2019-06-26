@@ -2,7 +2,7 @@
 Link to my portfolio website: http://www.meuportfolio.ml
 
 ## Quick Links
-* [Project Code Idea](http://codeidea.ml/)
+* [Code Idea project](http://codeidea.ml/)
 * [Project 1](http://www.meuportfolio.ml/projetos/projeto_01/index.html)
 * [Project 2](http://www.meuportfolio.ml/projetos/projeto_02/index.html)
 * [Project 3](http://www.meuportfolio.ml/projetos/projeto_03/index.html)
