@@ -1,7 +1,7 @@
 # Portfólio
 Link to my portfolio website: http://www.meuportfolio.ml
 
-## Quick Links
+## Quick links to projects
 * [Code Idea project](http://codeidea.ml/)
 * [Project 1](http://www.meuportfolio.ml/projetos/projeto_01/index.html)
 * [Project 2](http://www.meuportfolio.ml/projetos/projeto_02/index.html)
